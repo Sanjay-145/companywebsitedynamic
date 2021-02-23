@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Silicon Private Limited</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="icon" href="{% static 'img/titleicon.png' %}" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div>
+        <div class="menuitem"><a href="/products">Products</a></div>
+        <div class="menuitem"><a>Silicon<br>Corp</a></div>
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contactus">Contact Us</a></div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="banner">
+                <h1 id="title">Silicon<br>Corp<br>Limited</h1>
+            </div>
+
+            {% block content %}
+            {% endblock  %}
+        </div>
+        <div class="footer">
+            Copyright © 2020 Silicon Corp Limited, Developed by Sanjay Boven
+        </div>
+    </div>
+</body>
+
+</html>
